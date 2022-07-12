@@ -19,9 +19,7 @@ header,
     SITE SECTIONS
 *******************************/
 
-
 /* --------  HEADER  --------*/
-
 header {
     display: flex;
     align-items: center;
@@ -48,7 +46,6 @@ header select {
 
 
 /* --------  MAIN SECTION  --------*/
-
 main.main-container {
     padding: 0;
 }
@@ -58,17 +55,10 @@ main.main-container {
     justify-content: center;
     flex-wrap: wrap;
 }
-.loader-container {
-    display: flex;
-    height: 50vh;
-    justify-content: center;
-    align-items: center;
-}
 
 /*
 Disc-card
 */
-
 .disc-card {
     display: flex;
     flex-direction: column;
