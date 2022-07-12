@@ -1,0 +1,104 @@
+/******************************
+    GENERAL STYLES
+*******************************/
+
+body {
+    background-color: #1e2d3b;
+}
+
+img {
+    max-width: 100%;
+}
+
+header,
+.disc-card {
+    background-color: #2e3a46;
+}
+
+/******************************
+    SITE SECTIONS
+*******************************/
+
+
+/* --------  HEADER  --------*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    margin-bottom: 65px;
+    height: 69px;
+}
+
+header img {
+    width: 38px;
+    filter: invert(48%) sepia(71%) saturate(448%) hue-rotate(84deg) brightness(95%) contrast(91%);
+}
+
+header .select-container {
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+}
+
+header select {
+    max-width: 193px;
+}
+
+
+/* --------  MAIN SECTION  --------*/
+
+main.main-container {
+    padding: 0;
+}
+.cards-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.loader-container {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+Disc-card
+*/
+
+.disc-card {
+    display: flex;
+    flex-direction: column;
+    width: 227px;
+    height: 378px;
+    margin: 0 16px 32px 16px;
+    padding: 16px;
+    text-align: center;
+}
+
+.disc-card img {
+    margin-bottom: 18px;
+    transition: all 0.15s;
+}
+
+.disc-card:hover img {
+    scale: 105%;
+}
+
+.disc-card h4 {
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
+
+.disc-card span {
+    color: gray;
+}
+
+.disc-card .author {
+    font-size: 20px;
+}
