@@ -14,7 +14,35 @@
 </head>
 
 <body>
+    <div id="app">
+        <!-- HEADER -->
+        <header>
+            <img src="img/logo-small.svg" alt="">
+            <div class="select-container">
+                <select class="form-select">
+                    <option selected value="">Seleziona un autore</option>
+                </select>
+                <select class="form-select">
+                    <option selected value="">Seleziona un genere</option>
+                </select>
+            </div>
+        </header>
 
+        <!-- MAIN -->
+        <main class="container main-container">
+            <div>
+                <div v-for="disc in discs" class="disc-card">
+                    <img :src="disc.poster" :alt="`Title: ${disc.title}; Genre: ${disc.genre}`">
+                    <h4>{{disc.title}}</h4>
+                    <span class="author">{{disc.author}}</span>
+                    <span class="year">{{disc.year}}</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- ============== -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
