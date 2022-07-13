@@ -41,6 +41,7 @@ include_once __DIR__ . "/database.php";
             <?php endforeach; ?>
         </div>
     </main>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
