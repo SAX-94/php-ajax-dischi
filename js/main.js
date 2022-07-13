@@ -6,7 +6,7 @@ const app = new Vue({
     mounted(){
         axios.get("../api.php")
             .then(resp => {
-                this.db = resp.data.data
+                this.db = resp.data
             })
     }
 })
